@@ -84,6 +84,13 @@ mixin OverlayMixin {
     }
   }
 
+  void markNeedsBuild(String id) {
+    final entry = _hashEntries[id];
+    if (entry != null) {
+      entry.entry.markNeedsBuild();
+    }
+  }
+
   void rearrangeByZIndex() {
     // final entries = _hashEntries.values.toList();
     // entries.sort((a, b) => a.zindex.compareTo(b.zindex));

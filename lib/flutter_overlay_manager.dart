@@ -58,6 +58,9 @@ class FlutterOverlayManager extends OverlayManager {
   void hide(String id) => _impl.hide(id);
 
   @override
+  void markNeedsBuild(String id) => _impl.markNeedsBuild(id);
+
+  @override
   OverlayEntryControl showLoading(
           {Widget Function(BuildContext context)? builder,
           bool hasShadow = true}) =>

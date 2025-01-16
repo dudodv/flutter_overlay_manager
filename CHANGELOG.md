@@ -1,3 +1,7 @@
+## 2.0.3
+
+* add func markNeedsBuild by id
+
 ## 2.0.2
 
 * Remove unsued parameters.

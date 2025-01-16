@@ -32,6 +32,8 @@ abstract class OverlayManager {
   /// Close the entry with [id]
   /// Only call this function if we don't know where the entry is showing up that mean we dont have an OverlayEntryControl reference.
   void hide(String id);
+  
+  void markNeedsBuild(String id);
 
   /// Re-arrange the entries based on their position.
   void rearrange();
